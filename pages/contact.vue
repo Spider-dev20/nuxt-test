@@ -1,9 +1,19 @@
 <template>
+
 <body>
+<h1>LEONARDO DA VINCI RESTAURANTE</h1>
   <div>
-    <h1>Kontaktseite</h1>
-    <h1><nuxt-link to="./about">Menü</nuxt-link></h1>
-    <h1><nuxt-link to="./">Startseite</nuxt-link></h1>
+
+    <table style="width:100%">
+            <tr>
+                <td><h1><nuxt-link to="/">Startseite </nuxt-link></h1></td>
+                <td><h1>Kontaktseite</h1></td>
+                <td><h1><nuxt-link to="./Gästebuch">Gästebuchseite</nuxt-link></h1></td>
+                <td><h1><nuxt-link to="./about">Menü</nuxt-link></h1></td>
+                
+            </tr>
+        </table>
+
     <h2>Reservierung unter:</h2>
     <h3>0157353057</h3>
     <br>
@@ -21,15 +31,16 @@
     <br>
     <hr>
     <br>
-    <br>
-<img src="./restaurant.jpg" alt="">
+    <img src="./restaurant.jpg" alt="">
 
 
     
 
     
   </div>
+
 </body>
+
 </template>
 
 <script scoped>
@@ -38,16 +49,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  
   body {
     background-color: burlywood;
     text-align: center;
   }
   h1 {
     font-family: initial;
-    border: 15px solid brown;
+    
     background-color: brown;
-    margin-block: 15px;
+     
   }
   h2{
     margin-block: 15px;  

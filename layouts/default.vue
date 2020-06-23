@@ -5,6 +5,25 @@
 </template>
 
 <style>
+
+  a {
+    color: black;
+  }
+td {
+  width: 25%;
+}
+
+body {
+    background-color: burlywood;
+    text-align: center;
+  }
+  h1 {
+    font-family: initial;
+    border: 15px solid brown;
+    background-color: brown;
+    margin-block: px;
+  }
+
 html {
   font-family:
     'Source Sans Pro',
@@ -52,7 +71,7 @@ html {
   color: #35495e;
   text-decoration: none;
   padding: 10px 30px;
-  margin-left: 15px;
+  margin-left: 20;
 }
 
 .button--grey:hover {

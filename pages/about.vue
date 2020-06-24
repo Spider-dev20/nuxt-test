@@ -21,14 +21,19 @@
         <h2>Crepe 9 Euro</h2>
 
         
+      
+           
     </div>
+
 </template>
 
 <script>
 export default {
-    name:"about"
+
+
 }
 </script>
+
 <style scoped>
 td {
     width: 25%;

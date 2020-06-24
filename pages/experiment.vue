@@ -1,5 +1,6 @@
-<template>
-
+<!--<template>
+<body>
+    <h1>LEONARDO DA VINCI RESTAURANTE</h1>
     <div id="todo-list-example">
         
       <table style="width:100%">
@@ -13,14 +14,15 @@
         </table>     
 
 
-
-            <label for="new-todo">Add a todo</label>
+<br>
+            
             <input
+            style="font-Size:25px"
                 v-model="newTodoText"
                 id="new-todo"
-                placeholder="E.g. Feed the cat"
+                placeholder="Name"
                 >
-            <button v-on:click="addtodo" >Add</button>
+            <button style="font-Size:25px" v-on:click="addtodo" >Hinzugügen</button>
 
         <ul>
             <li
@@ -32,16 +34,17 @@
             ></li>
         </ul>
         
-{{count}}
-{{newTodoText}}
+
+
     <div v-for="listItem in list">
         {{listItem.name}}
         {{listItem.msg}}
         {{listItem.place}}
 <hr>
-
-    </div>
-    </div>
+<br>
+   </div>
+</div>
+ </body>                   
 </template>
 
 <script>
@@ -50,20 +53,47 @@ export default {
         return {
             count:0,
             list: [],
-            newTodoText:''
+           newTodoText:''
     
         }
     },
     methods:{
         addtodo()  {
             this.count = this.count + 1;
-            this.list.push({name:"Nachricht von", place:" " + this.newTodoText})
+            this.list.push({name:"Danke für Ihren Besuch", place:" " + this.newTodoText})
 
             
         } 
     }
 }
-
-
 </script>
 
+<template>
+    <div>
+        
+Select your favorite fruit:
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Orange</option>
+  <option>Pineapple</option>
+  <option>Banana</option>
+  </select>
+  <br><br>
+  <input type="button" onclick="getOption()" value="Click Me!">
+
+
+<p id="demo"></p>
+
+    </div>
+</template>
+
+<script>
+export default {
+    function:{
+            getOption() {
+            var obj = document.getElementById("mySelect");
+            document.getElementById("demo").innerHTML = 
+            obj.options[obj.selectedIndex].text;
+            }
+}
+</script>
